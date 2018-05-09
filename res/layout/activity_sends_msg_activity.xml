@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/msg_background"
+    tools:context="com.example.acer.facebookapp.SendsMsg_activity">
+
+    <include
+        android:id="@+id/include"
+        layout="@layout/msg_toolbar" />
+
+    <android.support.v7.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/messeges_rv"
+        android:layout_marginBottom="60dp"
+        android:layout_below="@+id/include"
+        android:layout_marginTop="10sp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:orientation="horizontal"
+        android:weightSum="2">
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_weight="1"
+            android:layout_marginRight="10sp"
+            android:layout_marginLeft="10sp"
+            android:id="@+id/mymsg_edittext"
+            android:background="@drawable/rounded_edittext"
+            android:hint="  Write Messege..." />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:id="@+id/send_mymsg"
+            android:background="@drawable/ic_send_black_24dp" />
+    </LinearLayout>
+
+</RelativeLayout>

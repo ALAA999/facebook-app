@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/write_post"
+            android:icon="@drawable/ic_chrome_reader_mode_black_24dp"
+            android:title="Write Post" />
+        <item
+            android:id="@+id/change_img"
+            android:icon="@drawable/ic_menu_gallery"
+            android:title="Change Image" />
+        <item
+            android:id="@+id/change_name"
+            android:icon="@drawable/ic_text_fields_black_24dp"
+            android:title="Change Name" />
+        <item
+            android:id="@+id/change_pass"
+            android:icon="@drawable/ic_lock_black_24dp"
+            android:title="Change Password" />
+       
+        <item
+            android:id="@+id/showmy_page"
+            android:icon="@drawable/ic_remove_red_eye_black_24dp"
+            android:title="View My Page" />
+        <item
+            android:id="@+id/log_out"
+            android:icon="@drawable/log_out"
+            android:title="Log Out" />
+    </group>
+
+    <item android:title="Communicate">
+        <menu>
+            <item
+                android:id="@+id/nav_share"
+                android:icon="@drawable/ic_menu_share"
+                android:title="Share" />
+            <item
+                android:id="@+id/nav_send"
+                android:icon="@drawable/ic_menu_send"
+                android:title="Send" />
+        </menu>
+    </item>
+
+</menu>

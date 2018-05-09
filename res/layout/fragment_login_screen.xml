@@ -1,0 +1,89 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#4a6fd4"
+    tools:context="com.example.acer.facebookapp.LoginAndSignup_screen">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/welcome"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="40sp"
+            android:text="Facebook App"
+            android:textSize="30dp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/user_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20sp"
+            android:layout_marginRight="20sp"
+            android:layout_marginTop="50sp"
+            android:drawableLeft="@drawable/ic_person_black_24dp"
+            android:hint=" User Name" />
+
+        <EditText
+            android:id="@+id/password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20sp"
+            android:layout_marginRight="20sp"
+            android:layout_marginTop="50sp"
+            android:drawableLeft="@drawable/ic_lock_black_24dp"
+            android:drawableRight="@drawable/ic_remove_red_eye_black_24dp"
+            android:hint=" Password"
+            android:inputType="textPassword" />
+
+        <TextView
+            android:id="@+id/wrong_data"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20sp"
+            android:textColor="@color/Red"
+            android:textStyle="bold" />
+
+        <CheckBox
+            android:id="@+id/keep_logedin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20sp"
+            android:checked="true"
+            android:text="Keep me Loged In"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/login"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="50sp"
+            android:layout_marginRight="50sp"
+            android:layout_marginTop="50sp"
+            android:background="@drawable/login_button"
+            android:text="LOGIN"
+            android:textSize="17sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/signup"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="30sp"
+            android:drawableLeft="@drawable/ic_person_add_black_24dp"
+            android:gravity="center"
+            android:text="  SignUp"
+            android:textColor="#80b9ff"
+            android:textSize="20dp"
+            android:textStyle="bold" />
+    </LinearLayout>
+</FrameLayout>

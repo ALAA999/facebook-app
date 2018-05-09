@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:paddingBottom="20sp"
+    android:paddingRight="30dp"
+    android:paddingLeft="30dp"
+    android:paddingTop="10sp">
+
+
+    <TextView
+        android:id="@+id/signupdialog_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:text="Sign Up"
+        android:textSize="20dp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/new_username"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10sp"
+        android:layout_marginRight="10sp"
+        android:layout_marginTop="10sp"
+        android:hint="UserName" />
+
+    <com.ctrlplusz.anytextview.AnyEditTextView
+        android:id="@+id/new_password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10sp"
+        android:layout_marginRight="10sp"
+        android:layout_marginTop="15sp"
+        android:hint=" Password" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#ff00"
+        android:textStyle="bold"
+        android:layout_marginLeft="10sp"
+        android:id="@+id/bad_pass"/>
+
+    <EditText
+        android:id="@+id/new_passwordconform"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10sp"
+        android:layout_marginRight="10sp"
+        android:hint="Conformm Password" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="#ff00"
+        android:textStyle="bold"
+        android:layout_marginLeft="10sp"
+        android:id="@+id/conform_text"/>
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Keep me Loged In"
+        android:id="@+id/keep_logedin"
+        android:textStyle="bold"
+        android:checked="true"/>
+
+    <Button
+        android:id="@+id/new_uploadimg"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10sp"
+        android:text="Upload Image"
+        android:textSize="15dp"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/new_signupbutton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5sp"
+        android:text="Creat New Account"
+        android:textSize="15dp"
+        android:textStyle="bold" />
+
+
+</LinearLayout>

@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="10sp"
+    android:layout_marginRight="10sp"
+    android:layout_marginTop="10sp">
+
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/msg_card_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10sp"
+        android:layoutDirection="rtl"
+        app:cardBackgroundColor="#a1fffd"
+        app:cardCornerRadius="20sp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5sp"
+            android:layout_marginLeft="10sp"
+            android:layout_marginRight="10sp"
+            android:layout_marginTop="5sp">
+
+            <ImageView
+                android:id="@+id/msg_img"
+                android:layout_width="40dp"
+                android:layout_height="30dp" />
+
+            <TextView
+                android:id="@+id/this_msgtime"
+                android:layout_width="wrap_content"
+                android:layout_below="@id/this_msg"
+                android:layout_height="wrap_content"
+                android:text="time"/>
+            <TextView
+                android:id="@+id/this_msg"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="ssssss"
+                android:layout_toLeftOf="@id/this_msgtime"
+                android:textColor="@color/Black"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+        </RelativeLayout>
+    </android.support.v7.widget.CardView>
+
+
+</android.support.constraint.ConstraintLayout>
